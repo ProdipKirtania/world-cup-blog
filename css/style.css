@@ -5,6 +5,10 @@
     font-family: 'Poppins', sans-serif;
     /* color: #495057; */
 }
+body{
+    max-width: 1350px;
+    margin: 0 auto;
+}
 
 /* google fonts - popins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
@@ -338,6 +342,8 @@ fixture page design starts
 .team-flags {
     display: flex;
     justify-content: space-between;
+    /* width: 93px;
+    height: 56px; */
     align-items: center;
     padding-bottom: 20px;
     gap: 20px;
@@ -367,3 +373,21 @@ fixture page design starts
 /* ==
 fixture page design ends 
  ==  */
+
+
+
+/* ---------------------------
+ Responsive style starts
+ -------------------------- */
+
+.tablet-view-all a{
+    display: none;
+    text-decoration: none;
+    padding: 15px 25px;
+    width: 100px;
+    background: #f72634;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+}
+
