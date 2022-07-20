@@ -10,7 +10,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 
 
-/*  */
+/*  main container*/
 .container {
     width: 1350px;
 }
@@ -296,11 +296,12 @@ aside .navigation {
 /* ==
 fixture page design starts 
  ==  */
-.fixture-section{
+.fixture-section {
     display: flex;
     margin: 50px 50px;
 }
-.fixture-wrapper{
+
+.fixture-wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     row-gap: 20px;
@@ -309,7 +310,8 @@ fixture page design starts
     height: max-content;
     margin-left: 20px;
 }
-.fixtures{
+
+.fixtures {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -317,41 +319,51 @@ fixture page design starts
     border-radius: 10px;
     padding: 50px 10px;
 }
-.fixtures:hover{
+
+.fixtures:hover {
     border: 1px solid #161616;
     border-radius: 10px;
     transform: scale(1.08);
     transition: .5s;
 }
-.fixture-info{
+
+.fixture-info {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 90%;
 }
-.team-flags{
+
+.team-flags {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-bottom: 20px;
     gap: 20px;
 }
+
 .team-flags img {
     width: 93px;
     height: 56px;
-    /* border-radius: 10px 10px 0 0; */
 }
-.team-flags h2{
+
+.team-flags h2 {
     font-size: 16px;
 }
-.team{
+
+.team {
     font-size: 18px;
     font-weight: 600;
     padding-bottom: 10px;
     color: #161616;
 }
-.time{
+
+.time {
     font-size: 15px;
     color: #4D4D4D;
 }
+
+/* ==
+fixture page design ends 
+ ==  */
