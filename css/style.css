@@ -114,6 +114,7 @@ aside .navigation {
     background-color: #f72634;
     color: #fff;
 }
+
 .blogs {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -128,6 +129,13 @@ aside .navigation {
 border: 1px solid #ced4da;
 border-radius: 10px;
 }
+
+.blog:hover{
+    border: 1px solid #161616;
+    border-radius: 10px;
+    transform: scale(1.08)
+    }
+
 
 .blog-image img{
     width: 100%;
@@ -161,8 +169,32 @@ border-radius: 10px;
     display: flex;
     justify-content: space-between;
 }
+
+
 .blog-icons span{
     color: #161616;
     opacity: 80%;
 }
+
 /* == blog section ends == */
+
+
+/* == footer section starts == */
+.footer-section{
+    /* width: 1600px; */
+    background-color: #020347;
+}
+.footer-wraper{
+    width: 100%;
+    height: 400px;
+}
+.footer-logo{
+    display: flex;
+    justify-content: center;
+}
+.footer-logo h1{
+    margin-top: 130px;
+    font-size: 40px;
+    font-weight: 600;
+}
+/* == footer section ends == */
