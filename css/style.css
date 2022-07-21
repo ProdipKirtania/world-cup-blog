@@ -6,8 +6,8 @@
     /* color: #495057; */
 }
 body{
-    max-width: 1350px;
-    margin: 0 auto;
+    /* max-width: 1350px; */
+    /* margin: 0 auto; */
 }
 
 /* google fonts - popins */
@@ -16,7 +16,8 @@ body{
 
 /*  main container*/
 .container {
-    width: 1350px;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 /* ==  header section style starts == */
@@ -44,7 +45,7 @@ body{
 }
 
 .banner-title h1 {
-    font-size: 70px;
+    font-size: 5vw;
     font-weight: 700;
 }
 
@@ -62,7 +63,7 @@ body{
     width: 160px;
     height: 40px;
     margin-top: 30px;
-    background: #f72634;
+    background: #ff4800;
     border-radius: 5px;
 }
 
@@ -87,13 +88,24 @@ body{
 .banner-image {
     margin-top: 122px;
 }
-
+.banner-image img{
+    height: max-content;
+}
+.banner-image:hover{
+    transform: translateX(-15px);
+    transition-duration: .4s;
+}
 /* ==  header section style ends == */
 
 /* == blog section starts == */
 .blog-section {
-    display: flex;
+    /* display: flex; */
     margin: 50px 50px;
+}
+.blog-wrapper{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
 }
 
 aside {
@@ -101,7 +113,7 @@ aside {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 25%;
+    width: 310px;
     height: max-content;
     padding: 30px 10px;
     background-color: #4003aa;
@@ -122,7 +134,7 @@ aside .navigation {
 }
 
 #active {
-    background-color: #f72634;
+    background-color: #ff4800;
     color: #fff;
 }
 
@@ -142,7 +154,7 @@ aside .navigation {
 }
 
 .blog:hover {
-    border: 1px solid #161616;
+    border: 1px solid #4003aa;
     border-radius: 10px;
     transform: scale(1.08);
     transition: .5s;
@@ -325,7 +337,7 @@ fixture page design starts
 }
 
 .fixtures:hover {
-    border: 1px solid #161616;
+    border: 1px solid #4003aa;
     border-radius: 10px;
     transform: scale(1.08);
     transition: .5s;
@@ -380,14 +392,92 @@ fixture page design ends
  Responsive style starts
  -------------------------- */
 
+ /* tablet view button stsyle */
 .tablet-view-all a{
     display: none;
     text-decoration: none;
     padding: 15px 25px;
     width: 100px;
-    background: #f72634;
+    background: #ff4800;
     color: #fff;
     text-align: center;
     border-radius: 5px;
 }
 
+
+/* media query for tablet device */
+@media screen and (max-width:768px){
+    .container{
+        width: 100%;
+    }
+    .header-section{
+        margin: 0 5%
+    }
+    .banner-box{
+        width: 100%;
+    }
+    .banner{
+        display: flex;
+        margin: 0 8%;
+    }
+    .banner-description p{
+        font-size: 14px;
+    }
+    .banner-button{
+        width: 140px;
+        height: 37px;
+        flex-wrap: nowrap;
+        padding:  10px 10px;;
+    }
+    .banner-button a {
+        font-size: 18px;
+    }
+    .banner-button i{
+        /* height: 18px;
+        padding-left: 10px; */
+    }
+    .banner-image{
+        margin-top: 122px;
+        height: 50vh;
+        /* height: 100px; */
+    }
+    .banner-image img{
+        height: max-content;
+    }
+
+    .blog-section{
+        /* display: flex; */
+        /* flex-direction: row; */
+        /* flex-wrap: wrap; */
+        /* width: 100%; */
+        margin: 5% 5%
+    }
+    .blog-wrapper{
+        flex-direction: column;
+    }
+    aside{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        gap: 10px;
+        margin: 5% 0;
+    }
+    aside .navigation{
+        width: 70%;
+    }
+    .blogs{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        width: 100%;
+    }
+    .blog:last-child{
+        display: none;
+    }
+    .tablet-view-all a{
+        display: block;
+        margin: 15px 25px;
+        text-align: center;
+    }
+}
