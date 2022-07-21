@@ -505,6 +505,13 @@ fixture page design ends
         width: 100%;
     }
 
+    .fixture-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        width: 100%;
+    }
+
     .blog:last-child {
         display: none;
     }
@@ -616,6 +623,12 @@ fixture page design ends
         grid-template-columns: repeat(1, 1fr);
         max-width: 100%;
         gap: 20px;
+    }
+
+    .fixture-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        width: 100%;
     }
 
     .footer-wraper {
