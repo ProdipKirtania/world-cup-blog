@@ -5,7 +5,8 @@
     font-family: 'Poppins', sans-serif;
     /* color: #495057; */
 }
-body{
+
+body {
     /* max-width: 1350px; */
     /* margin: 0 auto; */
 }
@@ -88,13 +89,16 @@ body{
 .banner-image {
     margin-top: 122px;
 }
-.banner-image img{
+
+.banner-image img {
     height: max-content;
 }
-.banner-image:hover{
+
+.banner-image:hover {
     transform: translateX(-15px);
     transition-duration: .4s;
 }
+
 /* ==  header section style ends == */
 
 /* == blog section starts == */
@@ -102,7 +106,8 @@ body{
     /* display: flex; */
     margin: 50px 50px;
 }
-.blog-wrapper{
+
+.blog-wrapper {
     display: flex;
     width: 100%;
     flex-direction: row;
@@ -204,8 +209,8 @@ aside .navigation {
     opacity: 80%;
 }
 
- /* tablet view button style */
- .tablet-view-all a{
+/* tablet view button style */
+.tablet-view-all a {
     display: none;
     text-decoration: none;
     padding: 15px 25px;
@@ -215,6 +220,7 @@ aside .navigation {
     text-align: center;
     border-radius: 5px;
 }
+
 /* == blog section ends == */
 
 
@@ -244,10 +250,11 @@ aside .navigation {
     color: #fff;
 }
 
-.horizontal-line{
+.horizontal-line {
     display: flex;
     justify-content: center;
 }
+
 .horizontal-line hr {
     display: block;
     height: 1px;
@@ -269,7 +276,7 @@ aside .navigation {
     justify-content: space-between;
     list-style: none;
     width: 60%;
-    
+
 }
 
 .footer-navigation ul li {
@@ -289,7 +296,8 @@ aside .navigation {
     font-size: 16px;
     font-weight: 500;
 }
-.social-links{
+
+.social-links {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
@@ -300,7 +308,7 @@ aside .navigation {
     justify-content: center;
     width: 50%;
     /* margin: 0px 337px; */
-    
+
 }
 
 .social-icons ul {
@@ -413,62 +421,71 @@ fixture page design ends
  -------------------------- */
 
 
-/* media query for tablet device */
-@media screen and (max-width:768px){
-    .container{
+/* media queries for tablet device starts*/
+@media screen and (max-width:768px) {
+    .container {
         width: 100%;
     }
-    .header-section{
+
+    .header-section {
         margin: 0 5%
     }
-    .banner-box{
+
+    .banner-box {
         width: 100%;
         /* height: 50vh; */
         height: max-content;
-        
+
     }
-    .banner{
+
+    .banner {
         width: 100%;
         display: flex;
         margin: 0 8%;
     }
-    .banner-description p{
+
+    .banner-description p {
         font-size: 14px;
     }
-    .banner-button{
+
+    .banner-button {
         width: 140px;
         height: 37px;
         flex-wrap: nowrap;
-        padding:  10px 10px;;
+        padding: 10px 10px;
+        ;
     }
+
     .banner-button a {
         font-size: 18px;
     }
-    .banner-button i{
+
+    .banner-button i {
         /* height: 18px;
         padding-left: 10px; */
     }
-    .banner-image{
+
+    .banner-image {
         margin-top: 122px;
         height: 50vh;
         /* height: 100px; */
     }
-    .banner-image img{
+
+    .banner-image img {
         /* height: max-content; */
-         height: 50vh;
+        height: 50vh;
+        /* max-width: 100%; */
     }
 
-    .blog-section{
-        /* display: flex; */
-        /* flex-direction: row; */
-        /* flex-wrap: wrap; */
-        /* width: 100%; */
+    .blog-section {
         margin: 5% 5%
     }
-    .blog-wrapper{
+
+    .blog-wrapper {
         flex-direction: column;
     }
-    aside{
+
+    aside {
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -476,28 +493,33 @@ fixture page design ends
         gap: 10px;
         margin: 5% 0;
     }
-    aside .navigation{
+
+    aside .navigation {
         width: 70%;
     }
-    .blogs{
+
+    .blogs {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
         width: 100%;
     }
-    .blog:last-child{
+
+    .blog:last-child {
         display: none;
     }
 
-    .tablet-view-all{
+    .tablet-view-all {
         display: flex;
         justify-content: center;
     }
-    .tablet-view-all a{
+
+    .tablet-view-all a {
         display: block;
         margin: 15px 25px;
         text-align: center;
     }
+
     .footer-navigation ul {
         /* display: flex;
         
@@ -507,3 +529,117 @@ fixture page design ends
         flex-wrap: wrap;
     }
 }
+
+/* media queries for tablet device end*/
+
+/* media queries for mobile device starts*/
+@media screen and (max-width:390px) {
+    main {
+        margin: 0 1.5%;
+    }
+
+    .header-section {
+        margin: 10px 10px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .banner-box {
+        margin-top: 20px;
+    }
+
+    .banner {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-end;
+        margin: 0 3%;
+    }
+
+    .banner-info {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        /* margin-left: 5px;
+        margin-right: 5px; */
+    }
+
+    .banner-title h1 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .banner-description p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .banner-button {
+        display: flex;
+        justify-content: center;
+    }
+
+    .banner-button a {
+        font-size: 16px;
+    }
+
+    .banner-image {
+        height: 25vh;
+    }
+
+    .banner-image img {
+        height: 25vh;
+    }
+
+    .blog-section {
+        /* margin: 10px 10px; */
+    }
+
+    .blog-wrapper {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    aside {
+        flex-direction: column;
+        max-width: 100%;
+        flex-wrap: wrap;
+    }
+
+    aside .navigation {
+        width: 60%;
+    }
+
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 100%;
+        gap: 20px;
+    }
+
+    .footer-wraper {
+        width: 100%;
+    }
+
+    .footer-navigation ul {
+        flex-direction: column;
+        /* justify-content: center; */
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+    }
+
+    .social-icons ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .social-icons ul li {
+        padding-right: 10px;
+    }
+}
+
+/* media queries for mobile device ends*/
